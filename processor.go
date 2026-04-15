@@ -7,6 +7,8 @@ func processText(text string) string {
 
 	words = hexToDecimal(words)
 	words = binToDecimal(words)
+	words = toUpper(words)
+	words = toLower(words)
 
 	lines := strings.Join(words, " ")
 

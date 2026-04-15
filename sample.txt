@@ -1,1 +1,1 @@
-hello, 1E (hex) world! from 1010 (bin) people
+hello, 1E (hex) world! (up) from 1010 (bin) PEOPLE (low)
