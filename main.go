@@ -41,7 +41,7 @@ func main() {
 
 	writer := bufio.NewWriter(outFile)
 	for idx, line := range lines {
-		result := processFile(line)
+		result := processText(line)
 		if idx < len(lines)-1 {
 			fmt.Fprintln(writer, result)
 		} else {
