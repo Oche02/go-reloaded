@@ -9,6 +9,7 @@ func processText(text string) string {
 	words = binToDecimal(words)
 	words = toUpper(words)
 	words = toLower(words)
+	words = capitalize(words)
 
 	lines := strings.Join(words, " ")
 
