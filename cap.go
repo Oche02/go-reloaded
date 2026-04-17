@@ -21,7 +21,7 @@ func capitalize(words []string) []string {
 					words[i-j] = capFirst(words[i-j])
 				}
 			}
-			words = append(words[:i], words[i+1:]...)
+			words = append(words[:i], words[i+2:]...)
 		}
 	}
 	return words
@@ -31,5 +31,5 @@ func capFirst(words string) string {
 	if len(words) == 0 {
 		return words
 	}
-	return strings.ToUpper(string(words[0])) + words[1:]
+	return strings.ToUpper(string(words[0])) + strings.ToLower(string(words[1:]))
 }
