@@ -2,6 +2,7 @@ package main
 
 import (
 	"regexp"
+	"strings"
 )
 
 func fixPunctuation(text string) string {
@@ -17,5 +18,10 @@ func fixPunctuation(text string) string {
 	afterPunc := regexp.MustCompile(`([.,;:"1{}])`)
 	text = afterPunc.ReplaceAllString(text, "$1 $2")
 
-	return text
+	lines := strings.Split(text, "\n")
+	for i, line := range lines {
+		lines[i] = strings.TrimSpace(line)
+	}
+
+	return strings.Join(lines, "\n")
 }
