@@ -1,3 +1,5 @@
 hello, 1E (hex) whole world! (up, 2) from 1010 (bin) KIND PEOPLE (cap, 2)
 
-  ' There it was " . A           amazing    "(rock and role!
+  ' There it was " . A           amazing    "   (rock)   "     and role!
+
+  an banana

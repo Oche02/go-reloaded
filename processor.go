@@ -10,7 +10,8 @@ func processText(text string) string {
 	words = toUpper(words)
 	words = toLower(words)
 	words = capitalize(words)
-	words = fixArticle(words)
+	words = fixArticlesA(words)
+	words = fixArticlesB(words)
 
 	lines := strings.Join(words, " ")
 
