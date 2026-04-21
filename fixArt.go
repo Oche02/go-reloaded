@@ -2,7 +2,7 @@ package main
 
 import "strings"
 
-var vowelsAndH = "aeiouAEIOUhH"
+var vowelsAndH = "aeiouhAEIOUH"
 
 func fixArticlesA(words []string) []string {
 	for i := 0; i < len(words)-1; i++ {
@@ -36,4 +36,5 @@ func fixArticlesB(words []string) []string {
 		}
 	}
 	return words
+
 }
