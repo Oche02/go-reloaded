@@ -1,0 +1,1 @@
+NOTE: this string transformer will tranform "a house" which is correct to "an house". to have this corrected you must remove "h" from the vowels variable in the fixArticlesA function in fixArt.go file
