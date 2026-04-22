@@ -14,3 +14,6 @@ a house
 
 my name 'is oche' golang
 "'my name' is oche 'golang'"
+
+
+a 'apple' and an orange

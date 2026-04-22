@@ -14,3 +14,6 @@ There it was  .A           amazing     '   rock   '     and role!
 
 my name ' is oche ' golang
 "  '   my name ' is oche ' golang '  " 
+
+
+a  '   apple     '  and a orange
