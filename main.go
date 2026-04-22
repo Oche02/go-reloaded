@@ -49,5 +49,5 @@ func main() {
 		}
 	}
 	writer.Flush()
-	fmt.Println("Successfil")
+	fmt.Println("Successfull")
 }
