@@ -35,5 +35,8 @@ func fixSingleQuotes(text string) string {
 	re := regexp.MustCompile(`'\s*(.*?)\s*'`)
 	text = re.ReplaceAllString(text, "'$1'")
 
+	re2 := regexp.MustCompile(`"\s*(.*?)\s*"`)
+	text = re2.ReplaceAllString(text, ` "$1" `)
+
 	return text
 }

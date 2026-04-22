@@ -14,9 +14,8 @@ func processText(text string) string {
 	words = fixArticlesB(words)
 
 	lines := strings.Join(words, " ")
-
-	lines = fixPunctuation(lines)
 	lines = fixSingleQuotes(lines)
+	lines = fixPunctuation(lines)
 
 	return lines
 }

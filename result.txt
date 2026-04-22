@@ -1,13 +1,16 @@
 hello, 30 WHOLE WORLD! from 10 Different Kind Of People
 
-There it was. An amazing 'rock' and role!
+There it was. A amazing 'rock' and role!
 
 a banana
-
-an house
 
 an elephant
 
 an apple
 
+a house
+
 "'spaced out'",
+
+my name 'is oche' golang
+"'my name' is oche 'golang'"

@@ -1,13 +1,16 @@
 hello, 1E (hex) whole world! (up, 2) from 1010 (bin) different KIND of PEOPLE (cap, 4)
 
-There it was  . A           amazing     '   rock   '     and role!
+There it was  .A           amazing     '   rock   '     and role!
 
   an banana
-
-  a house
 
   a elephant
 
   a apple
 
-"'  spaced   out  '",
+  an house
+
+"  '  spaced   out  '  ",
+
+my name ' is oche ' golang
+"  '   my name ' is oche ' golang '  " 

@@ -20,7 +20,7 @@ func fixArticlesA(words []string) []string {
 	return words
 }
 
-var consonant = "bcdfgjklmnpqrstvwxyzBCDFGJKLMNPQRSTVWXYZ"
+var consonant = "bcdfgjhklmnpqrstvwxyzBCDFGJHKLMNPQRSTVWXYZ"
 
 func fixArticlesB(words []string) []string {
 	for i := 0; i < len(words)-1; i++ {
