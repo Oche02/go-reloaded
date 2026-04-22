@@ -1,6 +1,6 @@
 hello, 30 WHOLE WORLD! from 10 Kind People
 
-' There it was ". An amazing " (rock) " and role!
+There it was. An amazing 'rock' and role!
 
 a banana
 
@@ -10,4 +10,4 @@ an elephant
 
 an apple
 
-an hair
+"'spaced out'",

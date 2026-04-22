@@ -16,7 +16,7 @@ func processText(text string) string {
 	lines := strings.Join(words, " ")
 
 	lines = fixPunctuation(lines)
-	lines = fixQuotation(lines)
+	lines = fixSingleQuotes(lines)
 
 	return lines
 }
