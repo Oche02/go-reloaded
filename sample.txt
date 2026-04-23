@@ -16,4 +16,4 @@ my name ' is oche ' golang
 "  '   my name ' is oche ' golang '  " 
 
 
-a  '   apple     '  and a orange
+a'   apple     'and a orange

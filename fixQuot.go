@@ -2,6 +2,7 @@ package main
 
 import (
 	"regexp"
+	"strings"
 )
 
 // fixSingleQuotes finds every pair of single quotes ' '
@@ -33,10 +34,12 @@ func fixSingleQuotes(text string) string {
 	// with the captured content directly inside — no padding spaces.
 
 	re := regexp.MustCompile(`'\s*(.*?)\s*'`)
-	text = re.ReplaceAllString(text, "'$1'")
+	text = re.ReplaceAllString(text, ` '$1' `)
 
 	re2 := regexp.MustCompile(`"\s*(.*?)\s*"`)
-	text = re2.ReplaceAllString(text, ` "$1" `)
+	text = re2.ReplaceAllString(text, `"$1"`)
+
+	text = strings.Join(strings.Fields(text), " ")
 
 	return text
 }
