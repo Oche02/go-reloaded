@@ -8,7 +8,7 @@ an elephant
 
 an apple
 
-a house
+an house
 
 "'spaced out'",
 
@@ -19,3 +19,5 @@ my name 'is oche' golang
 a 'apple' and an orange
 
 Punctuation tests are... kinda boring, what do you think?
+
+an "'apple'" and a "banana".

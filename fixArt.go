@@ -1,40 +1,27 @@
 package main
 
-import "strings"
+import (
+	"strings"
+)
 
-var vowelsAndH = "aeiouhAEIOUH"
+func fixArticles(word []string) []string {
 
-func fixArticlesA(words []string) []string {
-	for i := 0; i < len(words)-1; i++ {
-		if words[i] == "a" || words[i] == "A" {
-			nextWord := words[i+1]
-			if len(nextWord) > 0 && strings.ContainsRune(vowelsAndH, rune(nextWord[0])) {
-				if words[i] == "A" {
-					words[i] = "An"
-				} else {
-					words[i] = "an"
-				}
-			}
+	for i := 0; i < len(word)-1; i++ {
+		new := strings.TrimLeft(strings.Join(word[i+1:], ""), "\"',.;:?!")
+		if len(new) == 0 {
+			continue
 		}
-	}
-	return words
-}
-
-var consonant = "bcdfgjhklmnpqrstvwxyzBCDFGJHKLMNPQRSTVWXYZ"
-
-func fixArticlesB(words []string) []string {
-	for i := 0; i < len(words)-1; i++ {
-		if words[i] == "an" || words[i] == "An" {
-			nextWord := words[i+1]
-			if len(nextWord) > 0 && strings.ContainsRune(consonant, rune(nextWord[0])) {
-				if words[i] == "An" {
-					words[i] = "A"
-				} else {
-					words[i] = "a"
-				}
-			}
+		vow := strings.ContainsAny("aeiouhAEIOUH", string(new[0]))
+		if word[i] == "a" && vow {
+			word[i] = "an"
+		} else if word[i] == "A" && vow {
+			word[i] = "An"
+		} else if word[i] == "an" && !vow {
+			word[i] = "a"
+		} else if word[i] == "An" && !vow {
+			word[i] = "A"
 		}
-	}
-	return words
 
+	}
+	return word
 }
